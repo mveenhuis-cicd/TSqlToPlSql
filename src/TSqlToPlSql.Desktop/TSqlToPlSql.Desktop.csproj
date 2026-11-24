@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>TSqlToPlSql.Desktop</AssemblyName>
+    <RootNamespace>TSqlToPlSql.Desktop</RootNamespace>
+    <!-- erlaubt das Bauen der Solution auch auf Linux/CI (ausführen nur unter Windows) -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TSqlToPlSql\TSqlToPlSql.csproj" />
+  </ItemGroup>
+
+</Project>
